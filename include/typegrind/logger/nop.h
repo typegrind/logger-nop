@@ -15,4 +15,6 @@
 #define TYPEGRIND_LOG_METHOD_INITIALIZER(targetName, locationStr, customName, flags, initializerExpression) (initializerExpression)
 #define TYPEGRIND_LOG_METHOD_ENTER(targetName, locationStr, customName, flags) /* nothing to do */
 
+#define tYPEGRIND_DEMANGLE(s) ""
+
 #endif
