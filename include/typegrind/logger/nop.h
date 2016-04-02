@@ -2,13 +2,13 @@
 #ifndef TYPEGRIND_LOGGER_NOP_H_
 #define TYPEGRIND_LOGGER_NOP_H_
 
-#define TYPEGRIND_LOG_NEW(typeStr, locationStr, typeSize, newExpression) (newExpression)
-#define TYPEGRIND_LOG_NEW_ARRAY(typeStr, locationStr, typeSize, newExpression) (newExpression)
+#define TYPEGRIND_LOG_NEW(locationStr, typeStr, canonicalStr, typeSize, newExpression) (newExpression)
+#define TYPEGRIND_LOG_NEW_ARRAY(locationStr, typeStr, canonicalStr, typeSize, newExpression) (newExpression)
 #define TYPEGRIND_LOG_OP_NEW(typeStr, locationStr, typeSize, size, newExpression) (newExpression)
 #define TYPEGRIND_LOG_OP_NEW_ARRAY(typeStr, locationStr, typeSize, size, newExpression) (newExpression)
 
-#define TYPEGRIND_LOG_DELETE(type, canonicalType, locationStr, deleteExpression) (deleteExpression)
-#define TYPEGRIND_LOG_DELETE_ARRAYA(type, canonicalType, locationStr, deleteExpression) (deleteExpression)
+#define TYPEGRIND_LOG_DELETE(locationStr, typeStr, canonicalType, deleteExpression) (deleteExpression)
+#define TYPEGRIND_LOG_DELETE_ARRAYA(locationStr, typeStr, canonicalType, deleteExpression) (deleteExpression)
 #define TYPEGRIND_LOG_OP_DELETE(pointehAddr, locationStr, deleteExpression) (deleteExpression)
 #define TYPEGRIND_LOG_OP_DELETE_ARRAY(pointerAddr, locationStr, deleteExpression) (deleteExpression)
 
