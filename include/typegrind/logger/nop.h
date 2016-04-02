@@ -7,8 +7,8 @@
 #define TYPEGRIND_LOG_OP_NEW(typeStr, locationStr, typeSize, size, newExpression) (newExpression)
 #define TYPEGRIND_LOG_OP_NEW_ARRAY(typeStr, locationStr, typeSize, size, newExpression) (newExpression)
 
-#define TYPEGRIND_LOG_DELETE(pointerAddr, locationStr, deleteExpression) (deleteExpression)
-#define TYPEGRIND_LOG_DELETE_ARRAYA(pointerAddr, locationStr, deleteExpression) (deleteExpression)
+#define TYPEGRIND_LOG_DELETE(type, canonicalType, locationStr, deleteExpression) (deleteExpression)
+#define TYPEGRIND_LOG_DELETE_ARRAYA(type, canonicalType, locationStr, deleteExpression) (deleteExpression)
 #define TYPEGRIND_LOG_OP_DELETE(pointehAddr, locationStr, deleteExpression) (deleteExpression)
 #define TYPEGRIND_LOG_OP_DELETE_ARRAY(pointerAddr, locationStr, deleteExpression) (deleteExpression)
 
