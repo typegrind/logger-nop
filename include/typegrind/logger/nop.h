@@ -12,8 +12,8 @@
 #define TYPEGRIND_LOG_OP_DELETE(locationStr, typeStr, canonicalType, deleteExpression) (deleteExpression)
 #define TYPEGRIND_LOG_OP_DELETE_ARRAY(locationStr, typeStr, canonicalType, deleteExpression) (deleteExpression)
 
-#define TYPEGRIND_LOG_METHOD_INITIALIZER(targetName, locationStr, customName, flags, initializerExpression) (initializerExpression)
-#define TYPEGRIND_LOG_METHOD_ENTER(targetName, locationStr, customName, flags) /* nothing to do */
+#define TYPEGRIND_LOG_FUNCTION_ENTER(locationStr, targetName, customName, flags) /* nothing to do */
+#define TYPEGRIND_LOG_FUNCTION_AUTO_ENTER(locationStr, targetName) /* nothing to do */
 
 #define tYPEGRIND_DEMANGLE(s) ""
 
